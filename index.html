@@ -14,6 +14,9 @@
             <div class="header-container">
                 <img src="svg/noemi-logo.svg" class="header-logo" alt="Логотип">
                 <nav class="menu">
+                    <button class="menu-burger-button">
+                        <span class="menu-burger-button-label">Открыть меню</span>
+                    </button>
                     <ul class="menu-list">
                         <li class="menu-list-item">
                             <a class="menu-link" href="#0">Главная</a>
@@ -38,7 +41,7 @@
             </div>
             <h1 class="header-title">Блог о творчестве, спорте, и образе жизни</h1>
         </header>
-        <aside class="trends">
+        <section class="trends">
             <h2 class="trends-title">Сейчас в тренде</h2>
             <div class="trends-box">
                 <article class="trend">
@@ -95,7 +98,7 @@
                     </div>
                 </article>
             </div>
-        </aside>
+        </section>
         <div class="content-container">
             <main class="news">
                 <article class="news-post">
@@ -315,11 +318,13 @@
                 </section>
             </aside>
         </div>
-        <aside class="our-products">
+        <section class="our-products">
             <h2 class="products-title">Наши изделия</h2>
             <div class="products-box">
                 <article class="product">
-                    <img src="Images/shop-item-desk1.jpg" class="product-img" alt="Фотография подушки">
+                    <img srcset="Images/shop-item-desk1.jpg 300w,Images/shop-item-tablet1.jpg 292w,Images/shop-item-mobile1.jpg 285w"
+                         src="Images/shop-item-desk1.jpg"
+                         class="product-img" alt="Фотография подушки">
                     <div class="product-content">
                         <h3 class="product-title">Подушки на диван</h3>
                         <div class="product-text">
@@ -375,8 +380,8 @@
                     </div>
                 </article>
             </div>
-        </aside>
-        <div class="footer">
+        </section>
+        <footer class="footer">
             <div class="social-container">
                 <a class="social-logo-dribbble" href="#0">
                     <span class="visually-hidden">Логотип Dribbble</span>
@@ -391,11 +396,11 @@
             <div class="copyright">
                 <a class="copyright-link" href="#0">Copyright @ 2009-2019 City Blog LLC.</a>
             </div>
-        </div>
+        </footer>
     </div>
     <div class="visually-hidden">
         <div class="popup">
-            <div class="popup__container">
+            <div class="popup__content">
                 <div class="feedback">
                     <header class="feedback__header">
                         <h2 class="feedback__title">Ваш Фидбек</h2>
